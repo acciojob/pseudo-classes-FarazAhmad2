@@ -1,37 +1,50 @@
-/*  your css code here. If applicable */
 :root {
   background-color: rgb(135, 206, 235);
+  /* Set entire page background color */
 }
 
-article > p:first-child {
+.container {
+  max-width: 600px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+
+article p:first-child {
   background-color: black;
   color: white;
 }
 
-article > p:nth-child(2) {
-  color: black;
+article p:nth-child(2) {
+  color: initial;
+  /* Standard text color */
 }
 
-article > p:last-child {
+article p:last-child {
   color: red;
 }
 
-ul > li:nth-child(1), ul > li:nth-child(3), ul > li:nth-child(5) {
-  background-color: white;
-  padding: 10px;
-  width: 50%;
-}
 
-ul > li:nth-child(3) {
-  background-color: pink;
-}
-
-ul > li:nth-child(2), ul > li:nth-child(4) {
+ul li {
   background-color: gray;
   padding: 10px;
   width: 50%;
 }
 
-ul > li:first-child, ul > li:last-child {
+ul li:nth-child(odd) {
+  background-color: white;
+  /* Every odd item has a white background */
+}
+
+ul li:first-child,
+ul li:last-child {
   font-size: 22px;
+  /* Font size of first and last items */
+}
+
+ul li:nth-last-child(3) {
+  background-color: pink;
+  /* Third-to-last item with pink background */
 }
